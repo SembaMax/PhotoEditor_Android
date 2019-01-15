@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory
 import android.graphics.Matrix
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
+import android.hardware.Camera
 import android.hardware.camera2.CameraDevice
 import android.hardware.SensorManager
 import android.support.v7.app.AppCompatActivity
