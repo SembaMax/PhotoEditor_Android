@@ -51,6 +51,7 @@ class SnapshotActivityUpgraded : AppCompatActivity() {
         setContentView(R.layout.activity_snapshot_upgraded)
 
         initViews()
+        handleOptions()
     }
 
     private fun initViews() {
@@ -121,11 +122,11 @@ class SnapshotActivityUpgraded : AppCompatActivity() {
 
     val textureListener = object : TextureView.SurfaceTextureListener {
         override fun onSurfaceTextureSizeChanged(surface: SurfaceTexture?, width: Int, height: Int) {
-            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
         }
 
         override fun onSurfaceTextureUpdated(surface: SurfaceTexture?) {
-            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
         }
 
         override fun onSurfaceTextureDestroyed(surface: SurfaceTexture?): Boolean {
@@ -238,7 +239,7 @@ class SnapshotActivityUpgraded : AppCompatActivity() {
                     var output: OutputStream? = null
                     try {
                         output = FileOutputStream(file)
-                        output?.write(bytes)
+                        output.write(bytes)
                     } finally {
                         output?.close()
                     }
